@@ -1,0 +1,38 @@
+{
+  "name": "documents-monitoing",
+  "version": "1.0.0",
+  "electronVersion": "7.1.1",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "scss": "node-sass -w assets/scss/main.scss assets/css-compiled/styles.css",
+    "build": "electron-packager . DMonitoring --platform=win32 --arch=x64 --electron-version=7.1.1 --app-version=1.0.0 --out=dist --ignore=dist --prune",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^7.1.1",
+    "node-sass": "^4.13.0"
+  },
+  "build": {
+    "appId": "com.aventhor.dmonitoring"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.1.0",
+    "electron-twig": "^1.1.1",
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.1",
+    "path": "^0.12.7"
+  }
+}

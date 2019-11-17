@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css-compiled/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="assets/css-compiled/styles.css">
+</head>
+
+<body>
+	<section class="wrapper">
+		<nav class="s-nav">
+			<ul class="s-ul">
+				<li>
+					<button>1</button>
+				</li>
+				<li>
+					<button>2</button>
+				</li>
+			</ul>
+			<button type="button" data-modal="notifications" class="notifications-button"><img
+					src="assets/img/notifications.png" /></button>
+			<button type="button" data-modal="settings" class="settings-button"><img
+					src="assets/img/settings.png" /></button>
+		</nav>
+		<nav class="d-nav">
+			<header>
+				<h1 class="app-title">DMonitoring</h1>
+			</header>
+			<h4>Входящие</h4>
+			<div class="d-wrapper">
+				<ul>
+					<li class="d-item">
+						<h5>Document 422</h5>
+						<div class="d-in-out">
+							<button>index.xml</button>
+							<button>index.xml</button>
+						</div>
+					</li>
+					<li class="d-item">
+						<h5>Document 423</h5>
+						<div class="d-in-out">
+							<button>index.xml</button>
+						</div>
+					</li>
+					<li class="d-item">
+						<h5>Document 424</h5>
+						<div class="d-in-out">
+							<button>index.xml</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<h4>Исходящие</h4>
+			<div class="d-wrapper">
+				<ul>
+					<li class="d-item">
+						<h5>Document 422</h5>
+						<div class="d-in-out">
+							<button>index.xml</button>
+						</div>
+					</li>
+					<li class="d-item">
+						<h5>Document 423</h5>
+						<div class="d-in-out">
+							<button>index.xml</button>
+						</div>
+					</li>
+					<li class="d-item">
+						<h5>Document 424</h5>
+						<div class="d-in-out">
+							<button>index.xml</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="d-detail">
+			<h2>Document 422</h2>
+			We are using Node.js
+			<span id="node-version"></span>,
+			Chromium
+			<span id="chrome-version"></span>,
+			and Electron
+			<span id="electron-version"></span>.
+			<div class="option">
+				<div class="o-wrapper">
+					<h3 class='option-title'>Логи</h3>
+					<span class="option-desc">Включить ведение лога</span>
+				</div>
+				<div class="onoffswitch">
+					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+					<label class="onoffswitch-label" for="myonoffswitch"></label>
+				</div>
+			</div>
+		</main>
+	</section>
+	<script type="text/javascript">
+		require('./assets/js/jquery-3.4.1.min.js')
+		require('./renderer-process/application-menu')
+		require('./renderer-process/notifications')
+		require('./renderer-process/settings')
+	</script>
+</body>
+
+</html>
