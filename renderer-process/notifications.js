@@ -10,7 +10,7 @@ $.ajax({
     success: res => {
         $('.container-after-titlebar').append(res);
     }
-}).done(console.log('loaded settings'))
+}).done(console.log('loaded notifications'))
 
 $(document).on('click', '.notifications-button', () => {
     openModal();

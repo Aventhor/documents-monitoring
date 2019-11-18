@@ -1,4 +1,3 @@
-const { remote } = require('electron');
 const fs = require('fs');
 window.$ = window.jQuery = require('jquery');
 

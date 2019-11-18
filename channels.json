@@ -1,0 +1,14 @@
+{
+    "channels": [
+        {
+            "name": "channel 1",
+            "inFolder": "/vpn",
+            "outFolder": "/home"
+        },
+        {
+            "name": "channel 2",
+            "inFolder": "/vpn",
+            "outFolder": "/home"
+        }
+    ]
+}

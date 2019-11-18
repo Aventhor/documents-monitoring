@@ -6,12 +6,15 @@ const path = require('path')
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 function createWindow() {
+  require('./main-process/loader');
+  require('./main-process/channels');
+  require('./main-process/new-channel');
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 900,
-    height: 600,
+    height: 660,
     minWidth: 600,
-    minHeight: 400,
+    minHeight: 660,
     slashes: true,
     center: true,
     frame: false,
