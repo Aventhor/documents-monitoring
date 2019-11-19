@@ -113,7 +113,7 @@ header {
   background: #555;
 }
 
-.app-title {
+.channel-title {
   font-size: 2em;
 }
 
@@ -164,7 +164,7 @@ header {
 }
 
 .is-selected {
-  background-color: #4a47c7;
+  background-color: #4a47c7 !important;
 }
 
 %action-button {

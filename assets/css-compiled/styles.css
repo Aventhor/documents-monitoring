@@ -144,7 +144,7 @@ header {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; }
 
-.app-title {
+.channel-title {
   font-size: 2em; }
 
 .d-nav {
@@ -185,7 +185,7 @@ header {
           background-color: #4a47c7; }
 
 .is-selected {
-  background-color: #4a47c7; }
+  background-color: #4a47c7 !important; }
 
 .s-nav .s-ul button, .s-nav .add-button, .s-nav .settings-button, .s-nav .notifications-button, .settings .close-settings-button, .notifications .close-notifications-button, .new-channel .close-add-button, .new-channel .accept-add-button {
   border-radius: 50%;

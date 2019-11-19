@@ -1,5 +1,4 @@
 const { ipcRenderer } = require('electron');
-const fs = require('fs');
 window.$ = window.jQuery = require('jquery');
 
 $.ajax({
@@ -53,6 +52,9 @@ function createChannel(name, inFolder, outFolder) {
         }
         ipcRenderer.send('add-channel', channel);
         closeModal();
+        $('.new-channel-wrapper').trigger('reset')
+        $('span[name="new-channel-in-folder-path"]').text('')
+        $('span[name="new-channel-out-folder-path"]').text('')
     }
 }
 

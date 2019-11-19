@@ -4,11 +4,14 @@ const path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
+
+
 let mainWindow
 function createWindow() {
   require('./main-process/loader');
-  require('./main-process/channels');
+  require('./models/channels');
   require('./main-process/new-channel');
+  require('./main-process/logger')
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 900,
@@ -19,7 +22,7 @@ function createWindow() {
     center: true,
     frame: false,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
+      // preload: [path.join(__dirname, '/main-process/loader.js')],
       nodeIntegration: true
     }
   })

@@ -12,4 +12,7 @@ ipcMain.on('open-file-dialog', (event, valueEvent) => {
 
 ipcMain.on('add-channel', (event, channel) => {
     addChannel(channel);
+    data = getAllChannels()
+    event.sender.send('channels-load', data);
+    writeDBFile(data);
 })

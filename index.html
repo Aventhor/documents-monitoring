@@ -11,21 +11,6 @@
 	<section class="wrapper">
 		<nav class="s-nav">
 			<ul class='s-ul'>
-				<li>
-					<button>1</button>
-				</li>
-				<li>
-					<button>2</button>
-				</li>
-				<li>
-					<button>3</button>
-				</li>
-				<li>
-					<button>4</button>
-				</li>
-				<li>
-					<button>5</button>
-				</li>
 			</ul>
 			<div class="add-button-wrapper">
 				<hr>
@@ -40,7 +25,7 @@
 		</nav>
 		<nav class="d-nav">
 			<header>
-				<h1 class="app-title">DMonitoring</h1>
+				<h1 class="channel-title">DMonitoring</h1>
 			</header>
 			<h4>Входящие</h4>
 			<div class="d-wrapper">
@@ -112,10 +97,12 @@
 	</section>
 	<script type="text/javascript">
 		require('./assets/js/jquery-3.4.1.min.js')
+		require('./renderer-process/channels')
 		require('./renderer-process/new-channel')
 		require('./renderer-process/application-menu')
 		require('./renderer-process/notifications')
 		require('./renderer-process/settings')
+		require('./renderer-process/directories-nav')
 	</script>
 </body>
 

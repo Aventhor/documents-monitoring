@@ -2,7 +2,7 @@
   "name": "documents-monitoing",
   "version": "1.0.0",
   "electronVersion": "7.1.1",
-  "description": "A minimal Electron application",
+  "description": "A Electron application",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -30,9 +30,9 @@
   },
   "dependencies": {
     "custom-electron-titlebar": "^3.1.0",
-    "electron-twig": "^1.1.1",
     "fs": "0.0.1-security",
     "jquery": "^3.4.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "winston": "^3.2.1"
   }
 }
